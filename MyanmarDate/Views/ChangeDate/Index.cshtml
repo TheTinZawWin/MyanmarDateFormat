@@ -1,0 +1,54 @@
+﻿@model MyanmarDate.Models.DateDataModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body class="center-block">
+    <div class="d-flex p-2">
+       
+        <table>
+            <tr>
+                <td>
+                    <label > Date :</label>
+                </td>
+                <td>
+                    <label class="text-danger" >@Model.date</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Date Format :</label>
+                </td>
+                <td>
+                    <label class="text-danger">@Model.engDate</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label> Date Time Format :</label>
+                </td>
+                <td>
+                    <label class="text-danger">@Model.engDateTime</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Myanmar Date :</label>
+                </td>
+                <td>
+                    <label class="text-danger">@Model.myanmarDate</label>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
